@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bikeshare">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:name=".BikeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.bikeshare"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activities.UpdateRideActivity"
+            android:parentActivityName="Activities.BikeShareActivity" />
+        <activity
+            android:name=".Activities.BikeActivity"
+            android:parentActivityName="Activities.BikeShareActivity" />
+        <activity android:name=".Activities.BikeShareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.StartRideActivity"
+            android:parentActivityName=".Activities.BikeShareActivity" />
+        <activity
+            android:name=".Activities.EndRideActivity"
+            android:parentActivityName="Activities.BikeShareActivity" />
+        <activity
+            android:name=".Activities.DeleteRideActivity"
+            android:parentActivityName="Activities.BikeShareActivity" />
+    </application>
+
+</manifest>

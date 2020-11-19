@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FragmentApp</string>
+    <string name="first_button">First Fragment</string>
+    <string name="second_button">Second Fragment</string>
+    <string name="third_button">Third Fragment</string>
+    <string name="first_fragment">Red Fragment</string>
+    <string name="second_fragment">Green Fragment</string>
+    <string name="third_fragment">Blue Fragment</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/generalBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <Button
+            android:id="@+id/capture_button"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:background="@color/buttons"
+            android:text="Capture picture" />
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="105dp"
+            android:layout_height="67dp"
+            android:background="@color/buttons"
+            android:text="Change camera" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="381dp"
+        android:background="@color/everySecondText">
+
+        <org.opencv.android.JavaCameraView
+            xmlns:opencv="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            opencv:camera_id="any"
+            opencv:show_fps="true" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/threadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectFragment"
+        android:text="@string/threadButton" />
+
+    <Button
+        android:id="@+id/handlerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectFragment"
+        android:text="@string/handlerButton" />
+
+    <Button
+        android:id="@+id/asyncTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectFragment"
+        android:text="@string/asyncTaskButton" />
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

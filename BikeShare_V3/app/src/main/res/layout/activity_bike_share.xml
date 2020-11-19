@@ -1,0 +1,63 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/generalBackground"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:background="@color/topBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/fontsForTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bikeshare"
+            android:textColor="@color/title" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <Button
+        android:id="@+id/add_button"
+        style="@style/fontsForFieldText"
+        android:layout_width="168dp"
+        android:layout_height="63dp"
+        android:layout_margin="20dp"
+        android:background="@color/buttons"
+        android:text="Add ride"
+        android:textColorLink="@color/buttons" />
+
+    <Button
+        android:id="@+id/end_button"
+        style="@style/fontsForFieldText"
+        android:layout_width="168dp"
+        android:layout_height="63dp"
+        android:layout_margin="20dp"
+        android:background="@color/buttons"
+        android:text="End ride"
+        android:textColorLink="@color/buttons" />
+
+    <LinearLayout
+        android:background="@color/listViewColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/main_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/listViewColor">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

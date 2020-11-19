@@ -1,0 +1,201 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/generalBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="@color/topBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/fontsForTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bikeshare"
+                android:textColor="@color/title" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/generalBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/registerBike_button"
+                style="@style/fontsForFieldText"
+                android:layout_width="201dp"
+                android:layout_height="34dp"
+                android:layout_margin="10dp"
+                android:background="@color/buttons"
+                android:text="Register new bike"
+                android:textColorLink="@color/buttons" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/generalBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_button"
+                style="@style/fontsForFieldText"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_margin="10dp"
+                android:background="@color/buttons"
+                android:text="Start ride"
+                android:textColorLink="@color/buttons" />
+
+            <Button
+                android:id="@+id/end_button"
+                style="@style/fontsForFieldText"
+                android:layout_width="108dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@color/buttons"
+                android:text="End ride"
+                android:textColorLink="@color/buttons" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@color/generalBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/update_button"
+                style="@style/fontsForFieldText"
+                android:layout_width="138dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:background="@color/buttons"
+                android:text="Update ride"
+                android:textColorLink="@color/buttons" />
+
+
+            <Button
+                android:id="@+id/delete_button"
+                style="@style/fontsForFieldText"
+                android:layout_width="138dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:background="@color/buttons"
+                android:text="Delete ride"
+                android:textColorLink="@color/buttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/generalBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/show_button"
+                style="@style/fontsForFieldText"
+                android:layout_width="129dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@color/buttons"
+                android:text="Show rides"
+                android:textColorLink="@color/buttons" />
+
+            <Button
+                android:id="@+id/show_bikes"
+                style="@style/fontsForFieldText"
+                android:layout_width="129dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@color/buttons"
+                android:text="Show bikes"
+                android:textColorLink="@color/buttons" />
+
+            <Button
+                android:id="@+id/hide_button"
+                style="@style/fontsForFieldText"
+                android:layout_width="129dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@color/buttons"
+                android:text="Hide list"
+                android:textColorLink="@color/buttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/generalBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/main_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/listViewColor" />
+        </LinearLayout>
+
+       <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:background="@color/generalBackground"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/bike_recycler_view"
+               android:layout_width="match_parent"
+               android:layout_height="238dp"
+               android:background="@color/listViewColor" />
+      </LinearLayout>
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/everyFirstText" />
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/everyFirstText" />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:gravity="top"
+            android:background="@color/everyFirstText" />-->
+    </LinearLayout>
+</FrameLayout>

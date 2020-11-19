@@ -1,0 +1,101 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/generalBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="@color/topBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/fontsForTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bikeshare"
+                android:textColor="@color/title" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <Button
+            android:id="@+id/add_button"
+            style="@style/fontsForFieldText"
+            android:layout_width="118dp"
+            android:layout_height="34dp"
+            android:layout_margin="10dp"
+            android:background="@color/buttons"
+            android:text="Add ride"
+            android:textColorLink="@color/buttons" />
+
+        <Button
+            android:id="@+id/end_button"
+            style="@style/fontsForFieldText"
+            android:layout_width="116dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:background="@color/buttons"
+            android:text="End ride"
+            android:textColorLink="@color/buttons" />
+
+        <Button
+            android:id="@+id/update_button"
+            style="@style/fontsForFieldText"
+            android:layout_width="135dp"
+            android:layout_height="43dp"
+            android:layout_margin="10dp"
+            android:background="@color/buttons"
+            android:text="Update ride"
+            android:textColorLink="@color/buttons" />
+
+        <Button
+            android:id="@+id/delete_button"
+            style="@style/fontsForFieldText"
+            android:layout_width="138dp"
+            android:layout_height="37dp"
+            android:layout_margin="10dp"
+            android:background="@color/buttons"
+            android:text="Delete ride"
+            android:textColorLink="@color/buttons" />
+
+        <Button
+            android:id="@+id/show_button"
+            style="@style/fontsForFieldText"
+            android:layout_width="129dp"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:background="@color/buttons"
+            android:text="Show rides"
+            android:textColorLink="@color/buttons" />
+
+        <Button
+            android:id="@+id/hide_button"
+            style="@style/fontsForFieldText"
+            android:layout_width="129dp"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:background="@color/buttons"
+            android:text="Hide rides"
+            android:textColorLink="@color/buttons" />
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/main_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/listViewColor"/>
+    </LinearLayout>
+</FrameLayout>

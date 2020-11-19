@@ -1,0 +1,104 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/generalBackground"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:background="@color/topBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/fontsForTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bikeshare"
+            android:textColor="@color/everyFirstText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/everyFirst"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/fontsForFieldText"
+            android:text="Last added"
+            />
+
+        <EditText
+            android:id="@+id/last_thing"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/everySecondText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/fontsForFieldText"
+            android:text="What bike?"
+            />/>
+
+        <EditText
+            android:id="@+id/what_text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:background="@color/everyFirst"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/fontsForFieldText"
+            android:text="Where?"
+            />/>
+
+        <EditText
+            android:id="@+id/where_text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <Button
+        android:id="@+id/endRide_button"
+        android:layout_width="168dp"
+        android:layout_height="63dp"
+        android:background="@color/buttons"
+        style="@style/fontsForFieldText"
+        android:text="End ride"
+        android:textColorLink="@color/buttons" />
+
+</LinearLayout>

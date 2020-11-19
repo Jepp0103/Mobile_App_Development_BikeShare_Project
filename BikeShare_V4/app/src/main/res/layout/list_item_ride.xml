@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listViewColor"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/what_bike_ride"
+        style="@style/fontsForItems"
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/listViewColor"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/start_ride"
+        style="@style/fontsForItems"
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/listViewColor"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/end_ride"
+        style="@style/fontsForItems"
+        android:layout_weight="33"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"/>
+</LinearLayout>

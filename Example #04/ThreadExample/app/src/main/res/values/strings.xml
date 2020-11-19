@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ThreadExample</string>
+    <string name="threadButton">Thread Example</string>
+    <string name="handlerButton">Handler Example</string>
+    <string name="asyncTaskButton">AsyncTask Example</string>
+    <string name="progressText">Progress: %d\%% complete</string>
+    <string name="startButton">Start</string>
+    <string name="stopButton">Stop</string>
+    <string name="resetButton">Reset</string>
+    <string name="downloadButton">Download again</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/listViewColor"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/bike_id"
+        style="@style/fontsForItems"
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listViewColor"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/type"
+        style="@style/fontsForItems"
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listViewColor"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/fontsForItems"
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"/>
+
+    <ImageView
+        android:id="@+id/show_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+</LinearLayout>
